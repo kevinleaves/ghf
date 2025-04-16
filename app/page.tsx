@@ -13,13 +13,22 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { HamburgerMenuIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import {
+  HamburgerMenuIcon,
+  MagnifyingGlassIcon,
+  TwitterLogoIcon,
+  FigmaLogoIcon,
+  LinkedInLogoIcon,
+  MobileIcon,
+  SewingPinFilledIcon,
+} from '@radix-ui/react-icons';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <div className="flex flex-col p-1 lg:p-4 lg:pb-20 lg:gap-16">
+    <div className="bg-background flex flex-col p-1 lg:p-4 lg:pb-20 lg:gap-16">
       <header className="p-4 md:p-6 lg:p-8">
         <div className="flex items-center justify-between w-full">
           {/**logo */}
@@ -106,53 +115,47 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start"></main>
-      {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer> */}
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center bg-footer text-footer-foreground py-12">
+        <div className="flex flex-col w-1/2 gap-8">
+          <div className="flex flex-col items-center py-8 gap-8">
+            <h3 className="font-bold">Great Harvest</h3>
+            <nav className="">
+              <ul className="flex flex-col gap-4 text-center">
+                <li>
+                  <Link href="/location">Locations</Link>
+                </li>
+                <li>
+                  <Link href="/catering">Order Catering</Link>
+                </li>
+                <li>
+                  <Link href="/franchise">Franchise</Link>
+                </li>
+                <li>
+                  <Link href="/about">About Us</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact Us</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className="flex flex-col w-full gap-8">
+            <div className="flex gap-2 items-center">
+              <SewingPinFilledIcon className="w-8 h-8 flex-shrink-0" />
+              <span>28 S Montana Street Dillon, MT 59725</span>
+            </div>
+            <div className="flex gap-2 text-wrap items-center justify-center">
+              <MobileIcon className="w-8 h-8 flex-shrink-0" />
+              <span>1.800.442.0424 406.683.6842 </span>
+            </div>
+            <div className="flex justify-between px-4">
+              <TwitterLogoIcon className="w-8 h-8" />
+              <FigmaLogoIcon className="w-8 h-8" />
+              <LinkedInLogoIcon className="w-8 h-8" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
