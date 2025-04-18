@@ -7,9 +7,7 @@ import {
 } from '@radix-ui/react-icons';
 import Link from 'next/link';
 
-interface Props {}
-
-export default function Footer({}: Props) {
+export default function Footer({}) {
   return (
     <footer className="row-start-3 w-full bg-footer text-footer-foreground py-12 px-4 md:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:justify-between gap-8">

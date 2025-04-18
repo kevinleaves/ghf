@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
-interface Props {}
 
-export default function ContactForm({}: Props) {
+export default function ContactForm() {
   return (
     <form className="flex flex-col space-y-4">
       <span className="text-xl">Personal Information</span>

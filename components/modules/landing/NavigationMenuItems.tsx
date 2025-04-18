@@ -1,16 +1,12 @@
 import {
-  NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
-  NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
 import { Button } from '@/components/ui/button';
 
-interface Props {}
-
-export default function NavigationMenuItems({}: Props) {
+export default function NavigationMenuItems() {
   return (
     <>
       <NavigationMenuItem>

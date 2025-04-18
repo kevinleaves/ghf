@@ -82,7 +82,7 @@ export default function Home() {
 
             <div className="w-full lg:w-[450px] lg:ml-auto bg-cta p-6 md:p-8 rounded-lg mt-12 lg:mt-0">
               <h2 className="text-3xl md:text-3xl mb-4 text-center">
-                Contact Us and Let's Make Some BREAD together!
+                Contact Us and Let&apos;s Make Some BREAD together!
               </h2>
               <p className="text-sm mb-6 text-center">
                 <span className="">*</span> Required Information
